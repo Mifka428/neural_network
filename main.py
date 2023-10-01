@@ -2,15 +2,15 @@ import os
 
 from keras.preprocessing.text import Tokenizer
 from keras.preprocessing.sequence import pad_sequences
-from keras.models import Sequential, load_model
+from keras.models import Sequential
 from keras.layers import Embedding, LSTM, Dense, Bidirectional
-from transformers import GPT2Tokenizer, TFGPT2Model
+from transformers import GPT2Tokenizer
 
 import pandas as pd
 from tqdm import tqdm
 
 from nltk.translate import meteor
-from nltk import word_tokenize, sent_tokenize
+from nltk import word_tokenize
 
 from sumy.parsers.plaintext import PlaintextParser
 
